@@ -2,8 +2,12 @@ from flask import Flask,render_template
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return humor("serio")
+
 @app.route("/<humor>")
-def home(humor):
+def humor(humor):
     name = "Godofredo"
     if humor == "serio":
         serio = True
