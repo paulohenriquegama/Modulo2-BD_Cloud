@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(13, 161, 154, 0.931);
+    align-items: center;
+
+}
+h1{
+   
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.sec1{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 246, 248, 0.849);
+    border-radius: 20px;
+    height: 60%;
+    width: 80%;
+
+}
+
+.sec2{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.personagens{
+    background-color: rgba(13, 161, 154, 0.931);
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+
+}
+.nome_personagens{
+    text-align: center;
+    font-weight: bolder;
+    align-content: flex-end;
+    align-items: stretch;
+    
+    
+}
+
+.armas{
+    
+    width: 100%;
+    background-color: rgba(13, 161, 154, 0.931);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+.nome_arma{
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+    
+}
+
+button{
+    min-width: 70px;
+    width: 20%;
+    height: 15%;
+    background-color: navy;
+    color: oldlace;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    align-items: flex-end;
+    border-radius: 15px;
+    padding: 10px;
+    
+}

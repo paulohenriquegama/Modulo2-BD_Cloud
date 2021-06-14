@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>HUMOR</title>
+</head>
+<body>
+<h2>Como está o humor do {{name}}?</h2>
+<section class="sec1">
+    <div class="button">
+        
+            <a href="http://127.0.0.1:5000/serio">
+                <button>
+                    <h3>Serio</h3>
+                </button>
+            </a>
+        
+        
+        
+            <a href="http://127.0.0.1:5000/doido">
+                <button>
+                <h3>Doido</h3>
+                </button>
+            </a>
+                    
+    </div>
+    
+    {% if serio %}
+        <div class="fotos">
+            <img src="https://cdn.pixabay.com/photo/2020/12/27/20/24/emoji-5865207_960_720.png" alt="">
+            <h3>{{name}} tá serio</h3>
+            
+        </div>
+    {% else %}
+        <div class="fotos">    
+            <img src="https://pa1.narvii.com/6976/c2415ad0c98543ead937ba84c76e4c9604dba245r1-480-270_hq.gif" alt="">
+            <h3>{{name}} tá doido</h3>
+        </div>
+    {% endif %}
+    
+</section>
+    
+</body>
+</html>
