@@ -1,0 +1,30 @@
+.bloco{
+    margin: 0 auto;
+    width: 640px;
+    
+}
+#pokemon_selecionado{
+    text-align: center;
+}
+.lista_pokemons{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 680px
+}
+.bloco_pokemon{
+    background-color: black;
+    margin: 5px;
+    max-width: 200px;
+    color: blanchedalmond;
+    font-size: 20px;
+    text-align: center;
+}
+.bloco_pokemon:hover{
+    background-color: blanchedalmond;
+    color: black;
+    border: 2px solid blue;
+    margin: 2px;
+    
+}

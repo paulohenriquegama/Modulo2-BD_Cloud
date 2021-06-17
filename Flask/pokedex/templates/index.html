@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/scripts.js" defer></script>
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div class="bloco">
+        <img src="../static/gif_Blue.gif" alt="Logo Blue" width="200px">
+    </div>
+    <div class="bloco">
+        <h1 id="pokemon_selecionado">Nenhum pokemon selecionado</h1>
+    </div>
+        <div class="lista_pokemons">
+            {% for pokemon in pokemons %}
+            <div class="card_pokemon" data-nome="{{pokemon.nome}}">
+                <div class="bloco_pokemon" id="blocoPokemon">
+                    
+                    <div class="imagem_pokemon">
+                        <img src="{{imagem}}/{{pokemon.numero}}.png" alt="pokemon">
+                    </div>
+                    <div class="nome_pokemon">
+                        <b>{{pokemon.nome}}</b>
+                    </div>
+                    
+                </div>
+            </div>    
+            {% endfor%}
+            
+        </div>
+
+</body>
+
+</html>
